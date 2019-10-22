@@ -56,15 +56,63 @@
 		010094F7235DF76D00D3779E /* FeedNews */ = {
 			isa = PBXGroup;
 			children = (
-				010094F8235DF76D00D3779E /* AppDelegate.swift */,
-				010094FA235DF76D00D3779E /* SceneDelegate.swift */,
-				010094FC235DF76D00D3779E /* ViewController.swift */,
-				010094FE235DF76D00D3779E /* Main.storyboard */,
-				01009501235DF76E00D3779E /* Assets.xcassets */,
-				01009503235DF76E00D3779E /* LaunchScreen.storyboard */,
-				01009506235DF76E00D3779E /* Info.plist */,
+				014692AE235EF5E400BEB110 /* Delegates */,
+				014692A7235EF4C200BEB110 /* LaunchScreen */,
+				014692AB235EF52F00BEB110 /* HomeScreen */,
+				014692AA235EF51500BEB110 /* Resources */,
 			);
 			path = FeedNews;
+			sourceTree = "<group>";
+		};
+		014692A7235EF4C200BEB110 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				01009503235DF76E00D3779E /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		014692AA235EF51500BEB110 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01009501235DF76E00D3779E /* Assets.xcassets */,
+				01009506235DF76E00D3779E /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		014692AB235EF52F00BEB110 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				010094FE235DF76D00D3779E /* Main.storyboard */,
+				014692AD235EF55100BEB110 /* View-model */,
+				014692AC235EF53F00BEB110 /* View */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		014692AC235EF53F00BEB110 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				010094FC235DF76D00D3779E /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		014692AD235EF55100BEB110 /* View-model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View-model";
+			sourceTree = "<group>";
+		};
+		014692AE235EF5E400BEB110 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				010094F8235DF76D00D3779E /* AppDelegate.swift */,
+				010094FA235DF76D00D3779E /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,16 +333,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UQP38H2BBB;
-				INFOPLIST_FILE = FeedNews/Info.plist;
+				INFOPLIST_FILE = FeedNews/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tringapps.keshav.FeedNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,16 +353,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UQP38H2BBB;
-				INFOPLIST_FILE = FeedNews/Info.plist;
+				INFOPLIST_FILE = FeedNews/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tringapps.keshav.FeedNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
