@@ -12,7 +12,9 @@
 		010094FD235DF76D00D3779E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010094FC235DF76D00D3779E /* ViewController.swift */; };
 		01009500235DF76D00D3779E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010094FE235DF76D00D3779E /* Main.storyboard */; };
 		01009502235DF76E00D3779E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01009501235DF76E00D3779E /* Assets.xcassets */; };
-		01009505235DF76E00D3779E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01009503235DF76E00D3779E /* LaunchScreen.storyboard */; };
+		01009505235DF76E00D3779E /* FNLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01009503235DF76E00D3779E /* FNLaunchScreen.storyboard */; };
+		0131591C236058FE0025520B /* FNModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0131591B236058FE0025520B /* FNModel.swift */; };
+		01A6C59023606162004B03B6 /* FNHttpAsyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6C58F23606162004B03B6 /* FNHttpAsyncService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +24,10 @@
 		010094FC235DF76D00D3779E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		010094FF235DF76D00D3779E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01009501235DF76E00D3779E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		01009504235DF76E00D3779E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01009504235DF76E00D3779E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FNLaunchScreen.storyboard; sourceTree = "<group>"; };
 		01009506235DF76E00D3779E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0131591B236058FE0025520B /* FNModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNModel.swift; sourceTree = "<group>"; };
+		01A6C58F23606162004B03B6 /* FNHttpAsyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNHttpAsyncService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,39 +60,41 @@
 		010094F7235DF76D00D3779E /* FeedNews */ = {
 			isa = PBXGroup;
 			children = (
-				014692AE235EF5E400BEB110 /* Delegates */,
-				014692A7235EF4C200BEB110 /* LaunchScreen */,
-				014692AB235EF52F00BEB110 /* HomeScreen */,
-				014692AA235EF51500BEB110 /* Resources */,
+				01DE048A23602B570074C610 /* FNModle Class */,
+				014692AE235EF5E400BEB110 /* FNDelegates */,
+				014692A7235EF4C200BEB110 /* FNLaunchScreen */,
+				014692AB235EF52F00BEB110 /* FNHomeScreen */,
+				01A6C58E2360612B004B03B6 /* FNUtilities */,
+				014692AA235EF51500BEB110 /* FNResources */,
 			);
 			path = FeedNews;
 			sourceTree = "<group>";
 		};
-		014692A7235EF4C200BEB110 /* LaunchScreen */ = {
+		014692A7235EF4C200BEB110 /* FNLaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
-				01009503235DF76E00D3779E /* LaunchScreen.storyboard */,
+				01009503235DF76E00D3779E /* FNLaunchScreen.storyboard */,
 			);
-			path = LaunchScreen;
+			path = FNLaunchScreen;
 			sourceTree = "<group>";
 		};
-		014692AA235EF51500BEB110 /* Resources */ = {
+		014692AA235EF51500BEB110 /* FNResources */ = {
 			isa = PBXGroup;
 			children = (
 				01009501235DF76E00D3779E /* Assets.xcassets */,
 				01009506235DF76E00D3779E /* Info.plist */,
 			);
-			path = Resources;
+			path = FNResources;
 			sourceTree = "<group>";
 		};
-		014692AB235EF52F00BEB110 /* HomeScreen */ = {
+		014692AB235EF52F00BEB110 /* FNHomeScreen */ = {
 			isa = PBXGroup;
 			children = (
 				010094FE235DF76D00D3779E /* Main.storyboard */,
 				014692AD235EF55100BEB110 /* View-model */,
 				014692AC235EF53F00BEB110 /* View */,
 			);
-			path = HomeScreen;
+			path = FNHomeScreen;
 			sourceTree = "<group>";
 		};
 		014692AC235EF53F00BEB110 /* View */ = {
@@ -106,13 +112,29 @@
 			path = "View-model";
 			sourceTree = "<group>";
 		};
-		014692AE235EF5E400BEB110 /* Delegates */ = {
+		014692AE235EF5E400BEB110 /* FNDelegates */ = {
 			isa = PBXGroup;
 			children = (
 				010094F8235DF76D00D3779E /* AppDelegate.swift */,
 				010094FA235DF76D00D3779E /* SceneDelegate.swift */,
 			);
-			path = Delegates;
+			path = FNDelegates;
+			sourceTree = "<group>";
+		};
+		01A6C58E2360612B004B03B6 /* FNUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				01A6C58F23606162004B03B6 /* FNHttpAsyncService.swift */,
+			);
+			path = FNUtilities;
+			sourceTree = "<group>";
+		};
+		01DE048A23602B570074C610 /* FNModle Class */ = {
+			isa = PBXGroup;
+			children = (
+				0131591B236058FE0025520B /* FNModel.swift */,
+			);
+			path = "FNModle\U0010 Class";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01009505235DF76E00D3779E /* LaunchScreen.storyboard in Resources */,
+				01009505235DF76E00D3779E /* FNLaunchScreen.storyboard in Resources */,
 				01009502235DF76E00D3779E /* Assets.xcassets in Resources */,
 				01009500235DF76D00D3779E /* Main.storyboard in Resources */,
 			);
@@ -187,6 +209,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				010094FD235DF76D00D3779E /* ViewController.swift in Sources */,
+				0131591C236058FE0025520B /* FNModel.swift in Sources */,
+				01A6C59023606162004B03B6 /* FNHttpAsyncService.swift in Sources */,
 				010094F9235DF76D00D3779E /* AppDelegate.swift in Sources */,
 				010094FB235DF76D00D3779E /* SceneDelegate.swift in Sources */,
 			);
@@ -203,12 +227,12 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		01009503235DF76E00D3779E /* LaunchScreen.storyboard */ = {
+		01009503235DF76E00D3779E /* FNLaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				01009504235DF76E00D3779E /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = FNLaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -335,7 +359,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UQP38H2BBB;
-				INFOPLIST_FILE = FeedNews/Resources/Info.plist;
+				INFOPLIST_FILE = FeedNews/FNResources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,7 +379,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UQP38H2BBB;
-				INFOPLIST_FILE = FeedNews/Resources/Info.plist;
+				INFOPLIST_FILE = FeedNews/FNResources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
