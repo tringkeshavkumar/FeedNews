@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		010094F9235DF76D00D3779E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010094F8235DF76D00D3779E /* AppDelegate.swift */; };
 		010094FB235DF76D00D3779E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010094FA235DF76D00D3779E /* SceneDelegate.swift */; };
-		010094FD235DF76D00D3779E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010094FC235DF76D00D3779E /* ViewController.swift */; };
+		010094FD235DF76D00D3779E /* FNHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010094FC235DF76D00D3779E /* FNHomeViewController.swift */; };
 		01009500235DF76D00D3779E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010094FE235DF76D00D3779E /* Main.storyboard */; };
 		01009502235DF76E00D3779E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01009501235DF76E00D3779E /* Assets.xcassets */; };
 		01009505235DF76E00D3779E /* FNLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01009503235DF76E00D3779E /* FNLaunchScreen.storyboard */; };
-		0131591C236058FE0025520B /* FNModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0131591B236058FE0025520B /* FNModel.swift */; };
+		0102A5E2239506F400C46C92 /* FNHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0102A5E1239506F400C46C92 /* FNHomeViewModel.swift */; };
+		0102A5E42395072200C46C92 /* FNTitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0102A5E32395072200C46C92 /* FNTitleViewModel.swift */; };
+		0102A5E723950D2600C46C92 /* FNConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0102A5E623950D2600C46C92 /* FNConstants.swift */; };
+		0131591C236058FE0025520B /* FNHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0131591B236058FE0025520B /* FNHomeModel.swift */; };
+		0165CF6F23914FD8005DC4EC /* FNTitleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0165CF6E23914FD8005DC4EC /* FNTitleViewCell.swift */; };
 		01A6C59023606162004B03B6 /* FNHttpAsyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6C58F23606162004B03B6 /* FNHttpAsyncService.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +25,16 @@
 		010094F5235DF76D00D3779E /* FeedNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		010094F8235DF76D00D3779E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		010094FA235DF76D00D3779E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		010094FC235DF76D00D3779E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		010094FC235DF76D00D3779E /* FNHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNHomeViewController.swift; sourceTree = "<group>"; };
 		010094FF235DF76D00D3779E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01009501235DF76E00D3779E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01009504235DF76E00D3779E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FNLaunchScreen.storyboard; sourceTree = "<group>"; };
 		01009506235DF76E00D3779E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0131591B236058FE0025520B /* FNModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNModel.swift; sourceTree = "<group>"; };
+		0102A5E1239506F400C46C92 /* FNHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNHomeViewModel.swift; sourceTree = "<group>"; };
+		0102A5E32395072200C46C92 /* FNTitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNTitleViewModel.swift; sourceTree = "<group>"; };
+		0102A5E623950D2600C46C92 /* FNConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNConstants.swift; sourceTree = "<group>"; };
+		0131591B236058FE0025520B /* FNHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNHomeModel.swift; sourceTree = "<group>"; };
+		0165CF6E23914FD8005DC4EC /* FNTitleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNTitleViewCell.swift; sourceTree = "<group>"; };
 		01A6C58F23606162004B03B6 /* FNHttpAsyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNHttpAsyncService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,14 +68,39 @@
 		010094F7235DF76D00D3779E /* FeedNews */ = {
 			isa = PBXGroup;
 			children = (
-				01DE048A23602B570074C610 /* FNModle Class */,
-				014692AE235EF5E400BEB110 /* FNDelegates */,
-				014692A7235EF4C200BEB110 /* FNLaunchScreen */,
-				014692AB235EF52F00BEB110 /* FNHomeScreen */,
-				01A6C58E2360612B004B03B6 /* FNUtilities */,
-				014692AA235EF51500BEB110 /* FNResources */,
+				014692AE235EF5E400BEB110 /* Delegates */,
+				0102A5E0239504E600C46C92 /* Screens */,
+				0102A5E823950FB900C46C92 /* UI */,
+				01A6C58E2360612B004B03B6 /* WebServices */,
+				0102A5E523950CEF00C46C92 /* Constants */,
+				014692AA235EF51500BEB110 /* Resources */,
 			);
 			path = FeedNews;
+			sourceTree = "<group>";
+		};
+		0102A5E0239504E600C46C92 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				014692A7235EF4C200BEB110 /* FNLaunchScreen */,
+				014692AB235EF52F00BEB110 /* FNHomeScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0102A5E523950CEF00C46C92 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0102A5E623950D2600C46C92 /* FNConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		0102A5E823950FB900C46C92 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				010094FE235DF76D00D3779E /* Main.storyboard */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		014692A7235EF4C200BEB110 /* FNLaunchScreen */ = {
@@ -78,63 +111,42 @@
 			path = FNLaunchScreen;
 			sourceTree = "<group>";
 		};
-		014692AA235EF51500BEB110 /* FNResources */ = {
+		014692AA235EF51500BEB110 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				01009501235DF76E00D3779E /* Assets.xcassets */,
 				01009506235DF76E00D3779E /* Info.plist */,
 			);
-			path = FNResources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		014692AB235EF52F00BEB110 /* FNHomeScreen */ = {
 			isa = PBXGroup;
 			children = (
-				010094FE235DF76D00D3779E /* Main.storyboard */,
-				014692AD235EF55100BEB110 /* View-model */,
-				014692AC235EF53F00BEB110 /* View */,
+				0131591B236058FE0025520B /* FNHomeModel.swift */,
+				0102A5E1239506F400C46C92 /* FNHomeViewModel.swift */,
+				010094FC235DF76D00D3779E /* FNHomeViewController.swift */,
+				0165CF6E23914FD8005DC4EC /* FNTitleViewCell.swift */,
+				0102A5E32395072200C46C92 /* FNTitleViewModel.swift */,
 			);
 			path = FNHomeScreen;
 			sourceTree = "<group>";
 		};
-		014692AC235EF53F00BEB110 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				010094FC235DF76D00D3779E /* ViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		014692AD235EF55100BEB110 /* View-model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View-model";
-			sourceTree = "<group>";
-		};
-		014692AE235EF5E400BEB110 /* FNDelegates */ = {
+		014692AE235EF5E400BEB110 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
 				010094F8235DF76D00D3779E /* AppDelegate.swift */,
 				010094FA235DF76D00D3779E /* SceneDelegate.swift */,
 			);
-			path = FNDelegates;
+			path = Delegates;
 			sourceTree = "<group>";
 		};
-		01A6C58E2360612B004B03B6 /* FNUtilities */ = {
+		01A6C58E2360612B004B03B6 /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
 				01A6C58F23606162004B03B6 /* FNHttpAsyncService.swift */,
 			);
-			path = FNUtilities;
-			sourceTree = "<group>";
-		};
-		01DE048A23602B570074C610 /* FNModle Class */ = {
-			isa = PBXGroup;
-			children = (
-				0131591B236058FE0025520B /* FNModel.swift */,
-			);
-			path = "FNModle\U0010 Class";
+			path = WebServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,11 +220,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				010094FD235DF76D00D3779E /* ViewController.swift in Sources */,
-				0131591C236058FE0025520B /* FNModel.swift in Sources */,
+				010094FD235DF76D00D3779E /* FNHomeViewController.swift in Sources */,
+				0131591C236058FE0025520B /* FNHomeModel.swift in Sources */,
+				0102A5E2239506F400C46C92 /* FNHomeViewModel.swift in Sources */,
+				0102A5E42395072200C46C92 /* FNTitleViewModel.swift in Sources */,
 				01A6C59023606162004B03B6 /* FNHttpAsyncService.swift in Sources */,
 				010094F9235DF76D00D3779E /* AppDelegate.swift in Sources */,
 				010094FB235DF76D00D3779E /* SceneDelegate.swift in Sources */,
+				0102A5E723950D2600C46C92 /* FNConstants.swift in Sources */,
+				0165CF6F23914FD8005DC4EC /* FNTitleViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -342,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -359,7 +375,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UQP38H2BBB;
-				INFOPLIST_FILE = FeedNews/FNResources/Info.plist;
+				INFOPLIST_FILE = FeedNews/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,7 +395,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UQP38H2BBB;
-				INFOPLIST_FILE = FeedNews/FNResources/Info.plist;
+				INFOPLIST_FILE = " ";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

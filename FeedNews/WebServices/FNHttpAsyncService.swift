@@ -7,17 +7,6 @@
 //
 
 import Foundation
-struct Animal: Decodable {
-    let name: String
-    let description: String
-    let maxWeightInLbs: Int
-    
-    private enum CodingKeys: String, CodingKey {
-        case name
-        case description
-        case maxWeightInLbs = "max_weight_lbs"
-    }
-}
 
 class FNHttpAsyncService {
  
@@ -30,7 +19,7 @@ class FNHttpAsyncService {
     
     typealias result<T> = (Result<T,Error>) -> Void
     
-    static func getData<T:Decodable> (url: URL, modeltype: T.Type, completionHandler: @escaping result<T> ) {
+    static func getData<T:Decodable> (_ url: URL,_ modeltype: T.Type, completionHandler: @escaping result<T> ) {
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             
