@@ -45,6 +45,7 @@ extension FNHomeViewController : UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KtitleCellIdentifier, for: indexPath) as? FNTitleViewCell else {
             return UICollectionViewCell()
         }
@@ -55,6 +56,10 @@ extension FNHomeViewController : UICollectionViewDataSource {
         return cell
     }
     
- 
-    
+}
+
+extension FNHomeViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.view.frame.width, height: self.view.frame.height / 14)
+    }
 }
